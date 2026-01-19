@@ -1,3 +1,18 @@
+
+#robotbanner {
+    width: 100%;
+    height: 405px;
+    background-image: url("/images/logorobot.jpg");
+    background-size: cover;
+    background-position: center;
+    text-align: left;
+}
+#navigation {
+    margin: 10px;
+    padding: 10px 20px;
+    border: solid red 1px;
+}
+
 body {
     background-color: lightblue;
 }
@@ -37,9 +52,11 @@ body {
 }
 
 h1 {
+
     font-size: 40px;
     font-weight: bold;
-    color: gray;
+    color: black;
+    font-style: italic;
 }
 
 h2 {
