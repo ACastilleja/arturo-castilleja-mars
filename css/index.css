@@ -37,10 +37,32 @@ body {
 }
 
 #Experience {
+    text-align: center;
     box-sizing: border-box;
     margin: 10px;
     padding: 10px 20px;
     border: solid red 1px;
+}
+
+.Experience li{
+    box-sizing: border-box;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 10px;
+    border: solid black 1px;
+}
+
+#CdT {
+    background-color: rgb(148, 141, 174);
+}
+#Ccademy {
+    background-color: rgb(126, 93, 156);
+}
+#CIP {
+    background-color: blueviolet;
+}
+#ProcessEn {
+    background-color: rgb(109, 61, 154);
 }
 
 #Connect {
