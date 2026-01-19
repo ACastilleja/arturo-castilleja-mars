@@ -1,8 +1,9 @@
 body {
     background-color: lightblue;
 }
+
 * {
-    color: green;
+    color: rgb(4, 68, 4);
     
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
@@ -11,4 +12,25 @@ body {
     font-variation-settings:
     "wdth" 100;
 
+}
+
+#About {
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px 20px;
+    border: solid red 1px;
+}
+
+#Experience {
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px 20px;
+    border: solid red 1px;
+}
+
+#Connect {
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px 20px;
+    border: solid red 1px;
 }
