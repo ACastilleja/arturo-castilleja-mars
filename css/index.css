@@ -18,7 +18,7 @@ body {
 }
 
 * {
-    color: rgb(4, 68, 4);
+    color: rgb(5, 69, 5);
     
     font-family: "Roboto", sans-serif;
     font-optical-sizing: auto;
@@ -45,6 +45,7 @@ body {
 }
 
 .Experience li{
+    
     box-sizing: border-box;
     padding: 10px 20px;
     text-align: center;
@@ -72,6 +73,15 @@ body {
     border: solid red 1px;
     text-align: center;
 }
+.Connect{
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    text-align: center;
+    margin: 10px;
+    border: solid black 1px;
+    background-color: aliceblue;
+}
 
 h1 {
 
@@ -84,7 +94,7 @@ h1 {
 h2 {
    font-size: 20px;
     font-weight: bold;
-    color: gray;
+    color: rgb(85, 84, 84);
 }
 
 h5, #Copyright{
