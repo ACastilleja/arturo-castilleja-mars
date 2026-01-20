@@ -11,6 +11,18 @@
     margin: 10px;
     padding: 10px 20px;
     border: solid red 1px;
+    
+}
+.nav {
+    text-decoration: none;
+    color:black;
+   display: inline-block;
+    box-sizing: border-box;
+    padding: 10px 10px;
+    text-align: center;
+    margin: 1px;
+    border: solid black 1px;
+    background-color: rgb(170, 208, 242); 
 }
 
 body {
@@ -45,7 +57,7 @@ body {
 }
 
 .Experience li{
-    
+    list-style-type: none;
     box-sizing: border-box;
     padding: 10px 20px;
     text-align: center;
@@ -92,7 +104,7 @@ h1 {
 }
 
 h2 {
-   font-size: 20px;
+   font-size: 30px;
     font-weight: bold;
     color: rgb(85, 84, 84);
 }
