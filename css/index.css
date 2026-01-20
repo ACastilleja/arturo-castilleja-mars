@@ -25,6 +25,10 @@
     background-color: rgb(170, 208, 242); 
 }
 
+.nav:hover{
+    background-color:rgb(81, 81, 197);
+}
+
 body {
     background-color: lightblue;
 }
@@ -93,6 +97,10 @@ body {
     margin: 10px;
     border: solid black 1px;
     background-color: aliceblue;
+}
+
+.Connect:hover{
+    background-color: rgb(99, 99, 193);
 }
 
 h1 {
