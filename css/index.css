@@ -75,6 +75,7 @@ h5, #Copyright{
 }
 
 #Experience {
+    display:flex;
     text-align: center;
     box-sizing: border-box;
     margin: 10px;
@@ -83,6 +84,7 @@ h5, #Copyright{
 }
 
 .Experience li{
+    
     list-style-type: none;
     box-sizing: border-box;
     padding: 10px 20px;
@@ -102,6 +104,18 @@ h5, #Copyright{
 }
 #ProcessEn {
     background-color: rgb(109, 61, 154);
+}
+#Skills{
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px 20px;
+    border: solid black 1px;
+}
+#Projects{
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px 20px;
+    border: solid black 1px;
 }
 
 #Connect {
