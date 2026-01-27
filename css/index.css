@@ -3,36 +3,33 @@
 .Banner {
     
     display: flex;
-    
+    justify-content: space-evenly;
+    align-items: center;
 }
-.hero-banner {
-    width: 90%;
+
+.Banner-image img{
+    width: rem;
     height: 400px;
-    object-fit: cover;
-    object-position: center;
-    display: block;
+    border-radius: 50%;
+    justify-content: flex-end;
 
 }
-/* .Banner-image {
-    width: 100%;
-    height: 405px;
-    background-image: url("/images/finalhaustecbanner.jpg");
-    background-size: cover;
-    background-position: center;
-    text-align: left;
-}  */
+
 /* Navigation bar */
 #navigation {
     display: flex;
+    
+    justify-content: space-evenly;
     margin: 10px;
     padding: 10px 20px;
     /*border: solid red 1px;*/
     
 }
 .nav {
+    width: 100%;
     text-decoration: none;
     color:black;
-   display: inline-block;
+    display: inline-block;
     box-sizing: border-box;
     padding: 10px 10px;
     text-align: center;
@@ -70,7 +67,7 @@ h1 {
 }
 
 h2 {
-   font-size: 30px;
+    font-size: 30px;
     font-weight: bold;
     color: rgb(85, 84, 84);
 }
@@ -80,19 +77,23 @@ h5, #Copyright{
     font-weight: bold;
     color: gray;
 }
-
-/* Sections of Body*/
+ul {
+    list-style-type: none;
+}
+/* About Section*/
 #About {
     box-sizing: border-box;
     margin: 10px;
     padding: 10px 20px;
     border: solid black 1px;
 }
-.AboutImage {
+.About_image img{
     margin: 10px;
-    
+    border-radius: 100%;
+    width: 300px;
     
 }
+/* Experience Section */
 #Experience {
     display:flex;
     text-align: center;
@@ -104,7 +105,7 @@ h5, #Copyright{
 
 .Experience li{
     
-    list-style-type: none;
+    
     box-sizing: border-box;
     padding: 10px 20px;
     text-align: center;
@@ -124,19 +125,21 @@ h5, #Copyright{
 #ProcessEn {
     background-color: rgb(109, 61, 154);
 }
+/* Skills Section */
 #Skills{
     box-sizing: border-box;
     margin: 10px;
     padding: 10px 20px;
     border: solid black 1px;
 }
+/* Project Section */
 #Projects{
     box-sizing: border-box;
     margin: 10px;
     padding: 10px 20px;
     border: solid black 1px;
 }
-
+/* Connect Section */
 #Connect {
     box-sizing: border-box;
     margin: 10px;
