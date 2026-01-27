@@ -1,28 +1,43 @@
 
-/* Banner */
-.Banner {
-    
-    display: flex;
+.container {
+    display:flex;
     justify-content: space-evenly;
-    align-items: center;
+    
+    flex-direction: column;
+    margin: 20px;
+    
+}
+/* Banner */
+
+.Banner {
+    display: flex;
+    
+    justify-content: space-evenly;
+    align-items: center; 
+    padding-top: 80px;
 }
 
 .Banner-image img{
-    width: rem;
-    height: 400px;
+
+    height: 250px;
     border-radius: 50%;
     justify-content: flex-end;
-
+    
 }
 
 /* Navigation bar */
+
 #navigation {
+    width: 100%;
     display: flex;
-    
-    justify-content: space-evenly;
-    margin: 10px;
-    padding: 10px 20px;
+    top: 0;
+    position: fixed;
+    /* justify-content: center; */
+    margin: 10px 0px;
+    padding: 10px 0px;
     /*border: solid red 1px;*/
+    align-self: center;
+    z-index: ;
     
 }
 .nav {
@@ -30,12 +45,13 @@
     text-decoration: none;
     color:black;
     display: inline-block;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     padding: 10px 10px;
     text-align: center;
-    margin: 1px;
+    margin: 10px;
     border: solid black 1px;
     background-color: rgb(170, 208, 242); 
+    
 }
 
 .nav:hover{
@@ -90,7 +106,7 @@ ul {
 .About_image img{
     margin: 10px;
     border-radius: 100%;
-    width: 300px;
+    width: 250px;
     
 }
 /* Experience Section */
