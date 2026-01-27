@@ -1,6 +1,8 @@
+
 /* Banner */
 .Banner {
-    display: ;
+    
+    display: flex;
     
 }
 .hero-banner {
@@ -21,6 +23,7 @@
 }  */
 /* Navigation bar */
 #navigation {
+    display: flex;
     margin: 10px;
     padding: 10px 20px;
     /*border: solid red 1px;*/
@@ -85,7 +88,11 @@ h5, #Copyright{
     padding: 10px 20px;
     border: solid black 1px;
 }
-
+.AboutImage {
+    margin: 10px;
+    
+    
+}
 #Experience {
     display:flex;
     text-align: center;
