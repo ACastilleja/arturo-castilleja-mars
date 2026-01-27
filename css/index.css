@@ -1,12 +1,24 @@
 /* Banner */
-#robotbanner {
+.Banner {
+    display: ;
+    
+}
+.hero-banner {
+    width: 90%;
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+
+}
+/* .Banner-image {
     width: 100%;
     height: 405px;
-    background-image: url("/images/logorobot.jpg");
+    background-image: url("/images/finalhaustecbanner.jpg");
     background-size: cover;
     background-position: center;
     text-align: left;
-}
+}  */
 /* Navigation bar */
 #navigation {
     margin: 10px;
