@@ -38,10 +38,8 @@
     display: flex;
     top: 0;
     position: fixed;
-    /* justify-content: center; */
     margin: 10px 0px;
     padding: 10px 0px;
-    /*border: solid red 1px;*/
     align-self: center;
     z-index: ;
     
@@ -50,14 +48,12 @@
     width: 100%;
     text-decoration: none;
     color:black;
-    display: inline-block;
-    /* box-sizing: border-box; */
+    display: inline-block;  
     padding: 10px 10px;
     text-align: center;
     margin: 10px;
     border: solid black 1px;
-    background-color: rgb(170, 208, 242); 
-    
+    background-color: rgb(125, 153, 178); 
 }
 
 .nav:hover{
@@ -121,17 +117,25 @@ ul {
 }
 /* Experience Section */
 #Experience {
-    display:flex;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     text-align: center;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     margin: 10px;
     padding: 10px 20px;
     border: solid black 1px;
 }
+.Experience {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
 
+    
+}
+    
 .Experience li{
     
-    
     box-sizing: border-box;
     padding: 10px 20px;
     text-align: center;
@@ -139,18 +143,10 @@ ul {
     border: solid black 1px;
 }
 
-#CdT {
-    background-color: rgb(148, 141, 174);
+#Experience-list {
+    background-color: rgb(161, 122, 197);
 }
-#Ccademy {
-    background-color: rgb(126, 93, 156);
-}
-#CIP {
-    background-color: blueviolet;
-}
-#ProcessEn {
-    background-color: rgb(109, 61, 154);
-}
+
 /* Skills Section */
 #Skills{
     box-sizing: border-box;
@@ -167,6 +163,9 @@ ul {
 }
 /* Connect Section */
 #Connect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     box-sizing: border-box;
     margin: 10px;
     padding: 10px 20px;
@@ -175,12 +174,24 @@ ul {
 }
 .Connect{
     display: inline-block;
+    border-radius: 15%;
     box-sizing: border-box;
     padding: 10px 20px;
     text-align: center;
     margin: 10px;
     border: solid black 1px;
-    background-color: aliceblue;
+    color: #000;
+  /* background metallic gray*/
+  background: linear-gradient(
+    45deg,
+    #999 5%,
+    #fff 10%,
+    #ccc 30%,
+    #ddd 50%,
+    #ccc 70%,
+    #fff 80%,
+    #999 95%
+  );
 }
 
 .Connect:hover{
