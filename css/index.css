@@ -2,11 +2,15 @@
 .container {
     display:flex;
     justify-content: space-evenly;
-    
     flex-direction: column;
     margin: 20px;
+    background-image: url('../images/techbackground.jpg');
+    background-color: aqua;
+    margin-left: 0;
+    margin-right: 0; 
     
 }
+
 /* Banner */
 
 .Banner {
@@ -15,14 +19,16 @@
     justify-content: space-evenly;
     align-items: center; 
     padding-top: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
 }
 
 .Banner-image img{
 
-    height: 250px;
-    border-radius: 50%;
+    height: 350px;
+    border-radius: 20%;
     justify-content: flex-end;
-    
+   
 }
 
 /* Navigation bar */
@@ -98,15 +104,19 @@ ul {
 }
 /* About Section*/
 #About {
-    box-sizing: border-box;
+    display: flex;
+    box-sizing: ;
     margin: 10px;
     padding: 10px 20px;
     border: solid black 1px;
 }
+.About_body {
+    align-self: flex-end;
+}
 .About_image img{
     margin: 10px;
     border-radius: 100%;
-    width: 250px;
+    width: 150px;
     
 }
 /* Experience Section */
