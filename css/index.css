@@ -1,33 +1,82 @@
-/* Banner */
-#robotbanner {
-    width: 100%;
-    height: 405px;
-    background-image: url("/images/logorobot.jpg");
+/* Create whole page background */
+body {
+    background: linear-gradient(to bottom, rgba(173, 216, 230, 0) 60%, rgba(135, 206, 235, 0.8) 100%), 
+    url('../images/Technology\ background\ light\ blue.jpg');
+    /* background-image: url('../images/Technology\ background\ light\ blue.jpg'); */
     background-size: cover;
     background-position: center;
-    text-align: left;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0; 
+    
 }
+/* Design for header banner image */
+.container {
+    display:flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    margin: 20px;
+    background-image: url('../images/techbackground.jpg');
+    background-color: aqua;
+    margin-left: 0;
+    margin-right: 0; 
+    
+}
+
+/* Banner */
+
+.Banner {
+    display: flex;
+    
+    justify-content: space-evenly;
+    align-items: center; 
+    padding-top: 80px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.Banner-image img{
+
+    height: 350px;
+    border-radius: 20%;
+    justify-content: flex-end;
+   
+}
+
 /* Navigation bar */
+
 #navigation {
-    margin: 10px;
-    padding: 10px 20px;
-    /*border: solid red 1px;*/
+    width: 100%;
+    display: flex;
+    top: 0;
+    position: fixed;
+    margin: 10px 0px;
+    padding: 10px 0px;
+    align-self: center;
+    
     
 }
 .nav {
+    width: 100%;
     text-decoration: none;
-    color:black;
-   display: inline-block;
-    box-sizing: border-box;
-    padding: 10px 10px;
+    color:white;
+    display: inline-block;  
+    padding: 12px 24px;
     text-align: center;
-    margin: 1px;
-    border: solid black 1px;
-    background-color: rgb(170, 208, 242); 
+    margin: 10px;
+    border: none;
+    border-radius: 4px;
+    transition:all 0.3s ease;
+    cursor: pointer;
+    /* background-color: #0077b6; */
+    background-color: rgb(125, 153, 178); 
 }
-
+/* adding glow when you hover over nav buttons */
 .nav:hover{
-    background-color:rgb(81, 81, 197);
+    background-color: #0096c7;
+    transform: translateY(-3px); 
+    box-shadow: 0 0 15px rgba(0, 180, 216, 0.7); 
 }
 /* General body and background  */
 body {
@@ -47,7 +96,7 @@ body {
 }
 
 h1 {
-
+    text-shadow: 1px 1px 2px white;
     font-size: 40px;
     font-weight: bold;
     color: black;
@@ -55,7 +104,8 @@ h1 {
 }
 
 h2 {
-   font-size: 30px;
+    text-shadow: 1px 1px 2px white;
+    font-size: 30px;
     font-weight: bold;
     color: rgb(85, 84, 84);
 }
@@ -65,25 +115,51 @@ h5, #Copyright{
     font-weight: bold;
     color: gray;
 }
-
-/* Sections of Body*/
-#About {
-    box-sizing: border-box;
-    margin: 10px;
-    padding: 10px 20px;
-    border: solid black 1px;
-}
-
-#Experience {
-    text-align: center;
-    box-sizing: border-box;
-    margin: 10px;
-    padding: 10px 20px;
-    border: solid black 1px;
-}
-
-.Experience li{
+ul {
     list-style-type: none;
+}
+/* About Section*/
+#About {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: ;
+    margin: 10px;
+    padding: 10px 20px;
+    border: solid black 1px;
+}
+.About_body {
+    align-self: flex-end;
+}
+.About_image img{
+    margin: 10px;
+    border-radius: 100%;
+    width: 150px;
+    
+}
+/* Experience Section */
+#Experience {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    /* box-sizing: border-box; */
+    margin: 10px;
+    padding: 10px 20px;
+    border: solid black 1px;
+}
+.Experience {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-around; */
+
+    
+}
+    
+.Experience li{
+    
     box-sizing: border-box;
     padding: 10px 20px;
     text-align: center;
@@ -91,20 +167,29 @@ h5, #Copyright{
     border: solid black 1px;
 }
 
-#CdT {
-    background-color: rgb(148, 141, 174);
-}
-#Ccademy {
-    background-color: rgb(126, 93, 156);
-}
-#CIP {
-    background-color: blueviolet;
-}
-#ProcessEn {
-    background-color: rgb(109, 61, 154);
+#Experience-list {
+    background-color: rgb(161, 122, 197);
 }
 
+/* Skills Section */
+#Skills{
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px 20px;
+    border: solid black 1px;
+}
+/* Project Section */
+#Projects{
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 10px 20px;
+    border: solid black 1px;
+}
+/* Connect Section */
 #Connect {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     box-sizing: border-box;
     margin: 10px;
     padding: 10px 20px;
@@ -113,12 +198,24 @@ h5, #Copyright{
 }
 .Connect{
     display: inline-block;
+    border-radius: 15%;
     box-sizing: border-box;
     padding: 10px 20px;
     text-align: center;
     margin: 10px;
     border: solid black 1px;
-    background-color: aliceblue;
+    color: #000;
+  /* background metallic gray*/
+  background: linear-gradient(
+    45deg,
+    #999 5%,
+    #fff 10%,
+    #ccc 30%,
+    #ddd 50%,
+    #ccc 70%,
+    #fff 80%,
+    #999 95%
+  );
 }
 
 .Connect:hover{
