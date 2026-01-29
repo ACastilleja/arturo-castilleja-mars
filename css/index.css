@@ -139,7 +139,7 @@ ul {
 }
 /* Experience Section */
 #Experience {
-    flex-direction: column;
+    flex-direction: row;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -152,23 +152,60 @@ ul {
 }
 .Experience {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     /* justify-content: space-around; */
 
     
 }
     
-.Experience li{
+/* .Experience li{
     
     box-sizing: border-box;
     padding: 10px 20px;
     text-align: center;
     margin: 10px;
     border: solid black 1px;
-}
+} */
 
-#Experience-list {
-    background-color: rgb(161, 122, 197);
+.Experience-list {
+    display:flex;
+    
+    flex-direction: column;
+    
+
+}
+.Experience-item{
+    background-color: plum;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: space-around;
+    padding: 10px;
+
+}
+.Job-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:baseline;
+    /* background-color: rgb(190, 136, 190); */
+    padding: 20px;
+    
+}
+.job-title{
+    background-color: rgb(190, 136, 190);
+    padding: 30px; 
+    font-weight: bold;
+}
+.job-dates{
+    background-color: rgb(190, 136, 190);
+    padding: 30px; 
+    text-decoration: underline;
+}
+.Job-description{
+    background-color: rgb(190, 136, 190);
+    margin: 10px 20px;
 }
 
 /* Skills Section */
