@@ -153,34 +153,27 @@ ul {
 .Experience {
     display: flex;
     flex-direction: row;
+    
     /* justify-content: space-around; */
 
     
 }
-    
-/* .Experience li{
-    
-    box-sizing: border-box;
-    padding: 10px 20px;
-    text-align: center;
-    margin: 10px;
-    border: solid black 1px;
-} */
 
 .Experience-list {
-    display:flex;
-    
-    flex-direction: column;
-    
+    display: flex;   
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
 
 }
 .Experience-item{
     background-color: plum;
     display: flex;
+    flex: 1;
     flex-direction: column;
-    margin-bottom: 20px;
-    width: 100%;
-    justify-content: space-around;
+    max-width: 45%; 
+    
     padding: 10px;
 
 }
@@ -189,7 +182,6 @@ ul {
     flex-direction: row;
     justify-content: space-between;
     align-items:baseline;
-    /* background-color: rgb(190, 136, 190); */
     padding: 20px;
     
 }
