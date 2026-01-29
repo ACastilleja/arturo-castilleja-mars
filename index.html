@@ -12,55 +12,80 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
-<body >
-    <!-- Banner -->
-    <div id="robotbanner"><h1>ARTURO CASTILLEJA</h1></div>
+<!-- Header Flexbox -->
+<header class="container">
     
-    <!-- Navigation -->
+<!-- Banner -->
+    <div class="Banner">
+        <section class="Banner-name"><h1>ARTURO CASTILLEJA</h1></section>
+        <section class="Banner-image"><img src="images/mexican robot.jpg" alt="Friendly Mexican Robot"></section>
+    </div>
+<!-- Navigation -->
     <nav id="navigation">
         <a class="nav" href="#About">Who I Am!</a>
         <a class="nav" href="#Experience">Experience</a>
         <a class="nav" href="#Connect">Let's Connect</a>
-        
+        <a class="nav" href="#Skills">I Got Skills</a>
+        <a class="nav" href="#Projects">Check it out</a>
     </nav>
+</header>
+<body >
+    
+    
     <!-- About Section -->
     <section id="About">
-    <h2>About</h2>
-    <p>Hello my name is Arturo Castilleja, I was born and raised in South Texas, just minutes from the Rio Grande River.  My life was spent on 
-    both sides of the border, and lived in a community where speaking both spanish and english were common practice.  I have spent the past couple 
-    of years raising my children while my wife worked and now that the youngest has started full time classes I am reinventing myself in order to 
-    jump back into the work force.
-
-    </p>
+        <div class="About_title"><h2>About</h2></div>
+        <div class="About_body"><p>Hello my name is Arturo Castilleja, I was born and raised in South Texas, just minutes from the Rio Grande River.  My life was spent on 
+        both sides of the border, and lived in a community where speaking both spanish and english were common practice.  I have spent the past couple 
+        of years raising my children while my wife worked and now that the youngest has started full time classes I am reinventing myself in order to 
+        jump back into the work force.</p>
+        </div>
+        <div class="About_image"><img src="images/coffee-robot.jpg" alt="Robot drinking coffee"></div>
     </section>
 
     <!-- Experience Section -->
     <section id="Experience">
-    <h2>Experience</h2>
-    <ul class="Experience">
-        <li id="CdT">Code The Dream</li>
-        <li id="Ccademy">Codecademy</li>
-        <li id="CIP">Code In Place</li>
-        <li id="ProcessEn">Process Engineer</li>
+        <div class="Experience_title"><h2>Experience</h2></div>
+            <ul class="Experience">
+                <li id="Experience-list"><h2>Code The Dream</h2><h3>2025 to Present</h3><p>Pesently studying basics of HTML and CSS and will continue the Data engineering path. </p></li>
+                <li id="Experience-list"><h2>Codecademy</h2><h3>2025 to Present</h3><p>Additional study on HTML and CSS and have started the Data Engineer Career Path </p></li>
+                <li id="Experience-list"><h2>Code In Place</h2><h3>2025</h3><p>Participated and completed the 6 weeks intro to python course.</p></li>
+                <li id="Experience-list"><h2>Process Engineer</h2><h3>2000 to 2001</h3><p>After graduating with a Degree in Chemical Engineering I worked as a Process Engineer for Cryovac Sealed Air Corporation.</p></li>
+            </ul>
+    </section>
 
-    </ul>
+    <!-- Skills Section -->
+    <section id="Skills">
+        <div class="Skills_title"><h2>Skills</h2></div>
+        <div></div>
+    </section>
+
+    <!-- Projects Section -->
+
+    <section id="Projects">
+        <div class="Projects_title"><h2>Projects</h2></div>
+        <ul class="Project_list">
+            <li class="First_project"></li>
+        </ul>
     </section>
 
     <!-- Connect Section -->
     <section id="Connect">
-    <h2>Connect</h2>
-    
-        <a class="Connect" href="https://github.com/ACastilleja" target="_blank" rel="noopener noreferrer"><img src="images/github-mark.png"height="30"> GitHub</a>
-        <a class="Connect" href="https://www.linkedin.com/in/arturo-castilleja-801b9439a/" target="_blank" rel="noopener noreferrer">
-            <img src="images/LI-In-Bug.png"height="30"> Linkedin</a>
-        <a class="Connect" href="mailto:castillejaarturo@gmail.com"><img src="images/gmail icon.webp=s48-fcrop64=1,00000000ffffffff-rw" height="30"> Contact Me</a>
-
+        <div class="Connect_title"><h2>Connect</h2></div>
+        <div class="Connect-buttons">
+            <a class="Connect" href="https://github.com/ACastilleja" target="_blank" rel="noopener noreferrer"><img src="images/github-mark.png"height="30"> GitHub</a>
+            <a class="Connect" href="https://www.linkedin.com/in/arturo-castilleja-801b9439a/" target="_blank" rel="noopener noreferrer">
+                <img src="images/LI-In-Bug.png"height="30"> Linkedin</a>
+            <a class="Connect" href="mailto:castillejaarturo@gmail.com"><img src="images/gmail icon.webp=s48-fcrop64=1,00000000ffffffff-rw" height="30"> Contact Me</a>
+        </div>
     </section>
+    
+
     <footer>
     <!-- Footer content for website -->
-    <h5>
-        <p id="Copyright">Copyright &copy; | ACE 2026 | Be Cool, Do Good, Awesome &#x1F642;</p>         
-    </h5>
+        <div class="Footer_content"><h5>
+            <p id="Copyright">Copyright &copy; | ACE 2026 | Be Cool, Do Good, Awesome &#x1F642;</p>         
+        </h5></div>
 
     </footer>
 
