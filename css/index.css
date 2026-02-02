@@ -139,7 +139,7 @@ ul {
 }
 /* Experience Section */
 #Experience {
-    flex-direction: column;
+    flex-direction: row;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -152,23 +152,54 @@ ul {
 }
 .Experience {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    
     /* justify-content: space-around; */
 
     
 }
-    
-.Experience li{
-    
-    box-sizing: border-box;
-    padding: 10px 20px;
-    text-align: center;
-    margin: 10px;
-    border: solid black 1px;
-}
 
-#Experience-list {
-    background-color: rgb(161, 122, 197);
+.Experience-list {
+    display: flex;   
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+.Experience-item{
+    background-color: plum;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    max-width: 45%; 
+    border: solid black 1px;
+    padding: 10px;
+
+}
+.Job-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:baseline;
+    padding: 20px;
+    
+}
+.job-title{
+    background-color: rgb(190, 136, 190);
+    padding: 30px; 
+    font-weight: bold;
+    margin-right: 5px;
+}
+.job-dates{
+    background-color: rgb(190, 136, 190);
+    padding: 30px; 
+    text-decoration: underline;
+}
+.Job-description{
+    background-color: rgb(190, 136, 190);
+    margin: 10px 20px;
 }
 
 /* Skills Section */
@@ -196,6 +227,10 @@ ul {
     /*border: solid red 1px;*/
     text-align: center;
 }
+.Connect-buttons{
+    display: flex;
+    justify-content: space-evenly;
+}
 .Connect{
     display: inline-block;
     border-radius: 15%;
@@ -205,8 +240,8 @@ ul {
     margin: 10px;
     border: solid black 1px;
     color: #000;
-  /* background metallic gray*/
-  background: linear-gradient(
+    /* background metallic gray*/
+    background: linear-gradient(
     45deg,
     #999 5%,
     #fff 10%,
@@ -215,7 +250,7 @@ ul {
     #ccc 70%,
     #fff 80%,
     #999 95%
-  );
+    );
 }
 
 .Connect:hover{
