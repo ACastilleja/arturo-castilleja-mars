@@ -36,10 +36,11 @@ body {
     padding-right: 100px;
 }
 .Banner-name {
+    margin-top: 1rem;
     padding-right: 1em;
 }
 .Banner-image img{
-
+    margin-top: 1rem;
     height: 25vw;
     border-radius: 20%;
     justify-content: flex-end;
