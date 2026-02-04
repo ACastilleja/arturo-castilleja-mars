@@ -226,14 +226,21 @@ ul {
 }
 /* Connect Section */
 #Connect {
-    display: flex;
+    /* display: flex; */
+    display: grid;
     flex-direction: column;
     justify-content: center;
     box-sizing: border-box;
     padding: 10px 20px; 
     /*border: solid red 1px;*/
     text-align: center;
+    grid-template: 92px 92px / 400px;
 }
+.Connect img{
+    height: 1.5em;
+    
+}
+
 .Connect-buttons{
     display: flex;
     justify-content: space-evenly;
@@ -242,7 +249,7 @@ ul {
     display: inline-block;
     border-radius: 15%;
     box-sizing: border-box;
-    padding: 10px 20px;
+    padding: 10px 10px;
     text-align: center;
     margin: 10px;
     border: solid black 1px;
@@ -259,6 +266,7 @@ ul {
     #999 95%
     );
     transition: all 0.3s ease;
+    
 }
 
 .Connect:hover{
@@ -298,6 +306,13 @@ ul {
         flex-wrap: nowrap;
         align-items: flex-start;
     }
+    #Connect{
+        grid-template: 92px 100px / 600px;
+
+    }
+    .Connect img{
+    height: 3em; 
+    }
 
 }
 /* Desktop styles min-width: 1024px */
@@ -309,7 +324,8 @@ ul {
     .nav {
         width: auto;
         padding: 12px 50px;
-        margin: 0 10px;   
+        margin: 0 10px; 
+        text-shadow: 1px 1px 2px rgb(21, 20, 25);  
     }
     h1 {
         color: black;
@@ -318,9 +334,20 @@ ul {
     h2 {
         color: rgb(87, 86, 86);
         font-size: 1.5rem;
+        text-shadow: 1px 1px 2px rgb(147, 145, 155);
     }
     h5 {
         color: gray;
         font-size: .5rem;
+    }
+    #Connect{
+        grid-template: 92px 100px / 800px;
+
+    }
+    .Connect img{
+    height: 2.5em; 
+    }
+    .Footer_content{
+        text-shadow: 1px 1px 2px rgb(114, 112, 119);
     }
 }
