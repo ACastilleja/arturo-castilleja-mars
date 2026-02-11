@@ -115,7 +115,7 @@ h2 {
     color: rgb(70, 105, 137);
 }
 
-h5, #Copyright{
+h5{
     font-size: 1rem;
     font-weight: bold;
     color: rgb(70, 105, 137);
@@ -217,6 +217,25 @@ ul {
     padding: 10px 20px;
     border: solid black 1px;
 }
+#Skills h2{
+    display: flex;
+    justify-content: center;
+}
+.skill-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    padding: 1rem;
+}
+.skill-item{
+    text-shadow: 1px 1px 2px white;
+    margin: 10px;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 1em;
+    background-color: rgb(190, 136, 190);
+}
 /* Project Section */
 #Projects{
     box-sizing: border-box;
@@ -274,21 +293,18 @@ ul {
     transform: translateY(-3px); 
     box-shadow: 0 0 15px rgba(0, 180, 216, 0.7); 
 }
-/* .Footer_content{
-    display: flex;
-    justify-content: center;
-    width: 80%;
-    margin: auto;
-} */
-.footer{
+
+.footer p{
     display: flex;
     justify-content: center;
     width: 80%;
     margin: auto;
     text-shadow: 1px 1px 2px white;
-    color: #0096c7;
-    font-size: ;
+    color: #526970;
+    font-size: 1rem;
+    padding: .5em;
 }
+
 
 /* Tablet Styles  min-width: 768px*/
 @media (min-width: 768px) {
@@ -315,12 +331,18 @@ ul {
         flex-wrap: nowrap;
         align-items: flex-start;
     }
+    .skill-list{
+        justify-content: space-between;
+    }
     #Connect{
         grid-template: 92px 100px / 600px;
 
     }
     .Connect img{
     height: 3em; 
+    }
+    .footer p{
+        padding: 1em;
     }
 
 }
@@ -342,13 +364,20 @@ ul {
     }
     h2 {
         color: rgb(87, 86, 86);
-        font-size: 1.5rem;
+        font-size: 2rem;
         text-shadow: 1px 1px 2px rgb(147, 145, 155);
     }
     h5 {
         color: gray;
         font-size: .5rem;
     }
+    .Experience-item{
+        max-width: 30%;
+    }
+    .skill-list{
+        justify-content: space-evenly;
+    }
+    
     #Connect{
         grid-template: 92px 100px / 800px;
 
@@ -356,7 +385,9 @@ ul {
     .Connect img{
     height: 2.5em; 
     }
-    .Footer_content{
+
+
+    /* .Footer_content{
         text-shadow: 1px 1px 2px rgb(114, 112, 119);
-    }
+    } */
 }

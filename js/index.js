@@ -24,13 +24,16 @@ var skills = ["Javascript","Python","HTML","CSS","GitHub"]
 //Skills List Variables
 var skillsSection = document.getElementById("Skills");
 var skillsList = skillsSection.querySelector('ul');
-
+skillsList.classList.add('skill-list');
 //for Loop
 for (var i=0; i<skills.length;i++){
     var skill = document.createElement('li');
     skill.textContent = skills[i];
+    skill.classList.add('skill-item');
     skillsList.appendChild(skill);
 }
+
+
 
 
 
