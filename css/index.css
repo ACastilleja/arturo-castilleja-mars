@@ -274,11 +274,20 @@ ul {
     transform: translateY(-3px); 
     box-shadow: 0 0 15px rgba(0, 180, 216, 0.7); 
 }
-.Footer_content{
+/* .Footer_content{
     display: flex;
     justify-content: center;
     width: 80%;
     margin: auto;
+} */
+.footer{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    margin: auto;
+    text-shadow: 1px 1px 2px white;
+    color: #0096c7;
+    font-size: ;
 }
 
 /* Tablet Styles  min-width: 768px*/
