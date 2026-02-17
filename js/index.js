@@ -37,12 +37,6 @@ for (var i=0; i<skills.length;i++){
 
 
 
-// skills.forEach((item,index)=>{
-//     var skill = document.createElement('li');
-//     skill.textContent = skills[index];
-//     skillsList.appendChild(skill);
-    
-// });
 
 
 
