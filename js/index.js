@@ -47,6 +47,8 @@ messageForm.addEventListener('submit',(event)=>{
     console.log('Username:', userName);
     console.log('Email:',userEmail);
     console.log('Message:',userMessage);
+
+    messageForm.reset();
 });
 
 
