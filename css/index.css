@@ -64,6 +64,7 @@ body {
     
 }
 .nav {
+    
     text-decoration: none;
     color:white;
     flex-shrink: 0;
@@ -87,7 +88,9 @@ body {
 body {
     background-color: lightblue;
 }
-
+a {
+    text-decoration: none;
+}
 * {
     color: rgb(5, 69, 5);
     
@@ -293,7 +296,56 @@ ul {
     transform: translateY(-3px); 
     box-shadow: 0 0 15px rgba(0, 180, 216, 0.7); 
 }
+/* Form Section */
+#Form{
+    display:flex;
+    flex-direction: column;
+    padding: 1em;
+    border: 1em;
+    
+}
+#Form h2{
+    text-align: center;
+}
+label{
+    color: rgb(70, 105, 137);
+    font-size: 1.2rem;
+}
+#messageBody{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    
+}
+input, textarea{
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+button {
+    background-color: #6a89a7;
+    color: white;
+    padding: 1.5em;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3sec ease;
+    cursor: pointer;
+    font-size: 1em;
+}
+button:hover{
+    background-color: #0096c7;
+    transform: translateY(-3px); 
+    box-shadow: 0 0 15px rgba(0, 180, 216, 0.7); 
+}
 
+
+/* Footer section */
 .footer p{
     display: flex;
     justify-content: center;
@@ -317,6 +369,9 @@ ul {
     }
     .Banner-image img{
         padding-bottom: 10px;
+    }
+    a.nav{
+        margin-top: 10px;
     }
     .nav {
         width: auto;

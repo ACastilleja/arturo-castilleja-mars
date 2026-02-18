@@ -1,3 +1,4 @@
+
 //Footer element
 var footerElement = document.createElement('footer');
 document.body.appendChild(footerElement);
@@ -48,6 +49,29 @@ messageForm.addEventListener('submit',(event)=>{
     console.log('Email:',userEmail);
     console.log('Message:',userMessage);
 
+// Adding new message information to Messages section
+    var messageSection = document.getElementById('Messages');
+    var messageList = messageSection.querySelector('ul');
+    var newMessage = document.createElement('li');
+
+    newMessage.innerHTML=`<a href='mailto:${userEmail}'>USER: ${userName}</a><br><span>MESSAGE: ${userMessage}</span></br>`;
+    
+
+    // messageList.appendChild(newMessage);
+
+//Creating Remove Button
+    var removeButton = document.createElement('button');
+    removeButton.textContent='Remove';
+    removeButton.type = 'button';
+    removeButton.addEventListener('click',function(){
+        var entry = removeButton.parentNode;
+        entry.remove();
+    });
+    
+    
+    newMessage.appendChild(removeButton);
+    messageList.appendChild(newMessage);
+    
     messageForm.reset();
 });
 
