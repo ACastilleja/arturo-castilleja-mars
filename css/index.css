@@ -63,12 +63,14 @@ body {
     
     
 }
+
 .nav {
     
     text-decoration: none;
     color:white;
     flex-shrink: 0;
     display: inline-block;
+    
     padding: 10px 20px;
     text-align: center;
     margin: 10px 10px;
@@ -77,6 +79,9 @@ body {
     transition:all 0.3s ease;
     cursor: pointer;
     background-color: rgb(125, 153, 178); 
+}
+#menu-toggle:checked~.nav{
+    display:flex;
 }
 /* adding glow when you hover over nav buttons */
 .nav:hover{
@@ -386,14 +391,16 @@ button:hover{
 #Messages li button {
     background-color: #6a89a7;
     color: white;
-    padding: 1.5em;
+    /* padding: 1.5em; */
     border: none;
     border-radius: 25px;
     font-weight: bold;
     transition: background 0.3sec ease;
     cursor: pointer;
     font-size: 1em;
-    margin: 0px 2rem;
+    display: block;
+    margin: 1rem auto;
+    
 }
 #Messages li button:hover{
     background-color: #0096c7;
@@ -454,14 +461,21 @@ button:hover{
     height: 3em; 
     }
     #Form{
-        margin: 7rem;
+        margin: 5rem auto;
+        max-width: 400px;
+        width: 90%;
     }
     #Messages li{
-        margin: 7rem;
+        margin: 2rem auto;
+        max-width: 500px;
+        list-style: none;
+
     }
     #Messages li button{
-        margin: 0px 7rem;
+        display: block;
+        margin: 1rem auto;
     }
+    
     .footer p{
         padding: 1em;
     }
@@ -507,15 +521,19 @@ button:hover{
     height: 2.5em; 
     }
     #Form{
-        margin: 5rem 20rem;
+        margin: 5rem auto;
+        max-width: 500px;
+        width: 90%;
     }
     #Messages li{
-        margin: 5rem 20rem;
+        margin: 2rem auto;
+        max-width: 600px;
+        list-style: none;
+
     }
     #Messages li button{
-        margin: 0px 7rem;
-
-    /* .Footer_content{
-        text-shadow: 1px 1px 2px rgb(114, 112, 119);
-    } */
+        display: block;
+        margin: 1rem auto;
+    }
+    
 }
