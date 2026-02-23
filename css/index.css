@@ -63,11 +63,14 @@ body {
     
     
 }
+
 .nav {
+    
     text-decoration: none;
     color:white;
     flex-shrink: 0;
     display: inline-block;
+    
     padding: 10px 20px;
     text-align: center;
     margin: 10px 10px;
@@ -76,6 +79,9 @@ body {
     transition:all 0.3s ease;
     cursor: pointer;
     background-color: rgb(125, 153, 178); 
+}
+#menu-toggle:checked~.nav{
+    display:flex;
 }
 /* adding glow when you hover over nav buttons */
 .nav:hover{
@@ -87,7 +93,9 @@ body {
 body {
     background-color: lightblue;
 }
-
+a {
+    text-decoration: none;
+}
 * {
     color: rgb(5, 69, 5);
     
@@ -293,7 +301,115 @@ ul {
     transform: translateY(-3px); 
     box-shadow: 0 0 15px rgba(0, 180, 216, 0.7); 
 }
+/* Form Section */
+#Form{
+    display:flex;
+    flex-direction: column;
+    margin: 2rem;
+    border: 1em;
+    padding: 15px;
+    background: rgb(190, 136, 190);
+    border: 1px solid gray;
+}
+#Form h2{
+    text-align: center;
+}
+label{
+    text-shadow: 1px 1px 2px white;
+    color: rgb(70, 105, 137);
+    font-size: 1.2rem;
+}
+#messageBody{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    
+}
+input, textarea{
+    margin-bottom: 20px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 15rem;
+    box-sizing: border-box;
+}
+button {
+    background-color: #6a89a7;
+    color: white;
+    padding: 1.5em;
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3sec ease;
+    cursor: pointer;
+    font-size: 1em;
+}
+button:hover{
+    background-color: #0096c7;
+    transform: translateY(-3px); 
+    box-shadow: 0 0 15px rgba(0, 180, 216, 0.7); 
+}
 
+/* User Messages Section */
+#Messages {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+#Messages ul{
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+#Messages li{
+    display: flex;
+    flex-direction: column;
+    background: rgb(190, 136, 190);
+    border-radius: 12px;
+    padding: 15px;
+    border: 1px solid gray;
+    margin: 2rem;
+
+}
+
+#Messages li a{
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px white;
+}
+#Messages li a:hover{
+    cursor: pointer;
+    color:red;
+}
+#Messages li span{
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 2px white;
+}
+#Messages li button {
+    background-color: #6a89a7;
+    color: white;
+    /* padding: 1.5em; */
+    border: none;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: background 0.3sec ease;
+    cursor: pointer;
+    font-size: 1em;
+    display: block;
+    margin: 1rem auto;
+    
+}
+#Messages li button:hover{
+    background-color: #0096c7;
+    transform: translateY(-3px); 
+    box-shadow: 0 0 15px rgba(0, 180, 216, 0.7); 
+}
+
+
+/* Footer section */
 .footer p{
     display: flex;
     justify-content: center;
@@ -318,6 +434,9 @@ ul {
     .Banner-image img{
         padding-bottom: 10px;
     }
+    a.nav{
+        margin-top: 10px;
+    }
     .nav {
         width: auto;
         padding: 12px 25px;
@@ -341,6 +460,22 @@ ul {
     .Connect img{
     height: 3em; 
     }
+    #Form{
+        margin: 5rem auto;
+        max-width: 400px;
+        width: 90%;
+    }
+    #Messages li{
+        margin: 2rem auto;
+        max-width: 500px;
+        list-style: none;
+
+    }
+    #Messages li button{
+        display: block;
+        margin: 1rem auto;
+    }
+    
     .footer p{
         padding: 1em;
     }
@@ -385,9 +520,20 @@ ul {
     .Connect img{
     height: 2.5em; 
     }
+    #Form{
+        margin: 5rem auto;
+        max-width: 500px;
+        width: 90%;
+    }
+    #Messages li{
+        margin: 2rem auto;
+        max-width: 600px;
+        list-style: none;
 
-
-    /* .Footer_content{
-        text-shadow: 1px 1px 2px rgb(114, 112, 119);
-    } */
+    }
+    #Messages li button{
+        display: block;
+        margin: 1rem auto;
+    }
+    
 }
