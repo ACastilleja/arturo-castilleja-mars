@@ -75,6 +75,22 @@ messageForm.addEventListener('submit',(event)=>{
     messageForm.reset();
 });
 
+// Creating Fetch API for GitHub Repositories on Project section
+
+fetch("https://api.github.com/users/ACastilleja/repos")
+    .then(response => {
+        if(!response.ok){
+            throw new Error ('Error oops!');
+        }
+        return response.json();
+    })
+    .then(data => {
+        var repositories = data;
+        console.log(repositories);
+    })
+    .catch(error =>{
+        console.error(error);
+    });
 
 
 
