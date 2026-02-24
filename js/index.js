@@ -94,6 +94,7 @@ fetch("https://api.github.com/users/ACastilleja/repos?sort=updated&direction=des
         for(i=0; i<4; i++){
             const repo = repositories[i];
             var project = document.createElement('li');
+            project.classList.add('repoList');
             project.innerHTML = `<a href="${repo.html_url}" target="_blank">${repo.name}</a>`;
             projectList.appendChild(project);
         }
