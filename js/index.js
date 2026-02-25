@@ -75,9 +75,30 @@ messageForm.addEventListener('submit',(event)=>{
     messageForm.reset();
 });
 
+// Creating Fetch API for GitHub Repositories on Project section
 
+fetch("https://api.github.com/users/ACastilleja/repos?sort=updated&direction=desc")
+    .then(response => {
+        if(!response.ok){
+            throw new Error ('Error oops!');
+        }
+        return response.json();
+    })
+    .then(data => {
+        var repositories = data;
+        console.log(repositories);
 
-
-
-
-
+        var projectSection = document.getElementById('Projects');
+        var projectList = projectSection.querySelector('ul');
+      //for loop to add newest 4 repositories to ul Projects list
+        for(i=0; i<4; i++){
+            const repo = repositories[i];
+            var project = document.createElement('li');
+            project.classList.add('repoList');
+            project.innerHTML = `<a href="${repo.html_url}" target="_blank">${repo.name}</a>`;
+            projectList.appendChild(project);
+        }
+    })
+    .catch(error =>{
+        console.error(error);
+    });

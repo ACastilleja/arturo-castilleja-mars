@@ -189,6 +189,7 @@ ul {
     max-width: 100%; 
     border: solid black 1px;
     padding: 10px;
+    border-radius: 10px;
 
 }
 .Job-header{
@@ -243,14 +244,51 @@ ul {
     border-radius: 20px;
     padding: 1em;
     background-color: rgb(190, 136, 190);
+    color: rgb(22, 23, 23);
 }
+
 /* Project Section */
 #Projects{
-    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 10px;
     padding: 10px 20px;
     border: solid black 1px;
 }
+.Projects_title h2{
+    text-align: center;
+    font-size: 2rem;
+}
+.Project_list{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+}
+.repoList{
+    background: rgb(190, 136, 190);
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 6px whitesmoke;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.repoList:hover{
+    transform: translateY(-5px);
+}
+li.repoList a{
+    color:rgb(22, 23, 23);
+    
+    
+}
+
 /* Connect Section */
 #Connect {
     /* display: flex; */
@@ -301,6 +339,7 @@ ul {
     transform: translateY(-3px); 
     box-shadow: 0 0 15px rgba(0, 180, 216, 0.7); 
 }
+
 /* Form Section */
 #Form{
     display:flex;
@@ -310,13 +349,14 @@ ul {
     padding: 15px;
     background: rgb(190, 136, 190);
     border: 1px solid gray;
+    border-radius: 10px;
 }
 #Form h2{
     text-align: center;
 }
 label{
     text-shadow: 1px 1px 2px white;
-    color: rgb(70, 105, 137);
+    color: rgb(38, 62, 85);
     font-size: 1.2rem;
 }
 #messageBody{
@@ -453,6 +493,10 @@ button:hover{
     .skill-list{
         justify-content: space-between;
     }
+    .Project_list{
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
     #Connect{
         grid-template: 92px 100px / 600px;
 
@@ -479,7 +523,7 @@ button:hover{
     .footer p{
         padding: 1em;
     }
-
+    
 }
 /* Desktop styles min-width: 1024px */
 @media (min-width: 1024px){
@@ -512,7 +556,11 @@ button:hover{
     .skill-list{
         justify-content: space-evenly;
     }
-    
+    .Project_list{
+        grid-template-columns: repeat(3, 1fr);
+        max-width: 1200px;
+        margin: 0 auto;
+    }
     #Connect{
         grid-template: 92px 100px / 800px;
 
