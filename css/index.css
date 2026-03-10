@@ -80,9 +80,7 @@ body {
     cursor: pointer;
     background-color: rgb(125, 153, 178); 
 }
-#menu-toggle:checked~.nav{
-    display:flex;
-}
+
 /* adding glow when you hover over nav buttons */
 .nav:hover{
     background-color: #0096c7;
@@ -463,13 +461,14 @@ button:hover{
 
 
 /* Tablet Styles  min-width: 768px*/
-@media (min-width: 768px) {
+@media (min-width: 768px) {   
     #navigation{
         flex-direction: row;
         justify-content: space-around;
         font-size: 1.5rem;
         margin: 10px 0px;
         padding: 10px 0px;
+        /* background-color: rgb(125, 153, 178);  */
     }
     .Banner-image img{
         padding-bottom: 10px;
@@ -479,7 +478,7 @@ button:hover{
     }
     .nav {
         width: auto;
-        padding: 12px 25px;
+        padding: 12px 1rem;
         margin: 0 10px;   
     }
     .Banner {
@@ -525,6 +524,7 @@ button:hover{
     }
     
 }
+
 /* Desktop styles min-width: 1024px */
 @media (min-width: 1024px){
     .Banner-image img{
@@ -533,7 +533,7 @@ button:hover{
     } 
     .nav {
         width: auto;
-        padding: 12px 50px;
+        padding: 12px 2rem;
         margin: 0 10px; 
         text-shadow: 1px 1px 2px rgb(21, 20, 25);  
     }
