@@ -522,14 +522,7 @@ button:hover{
     .footer p{
         padding: 1em;
     }
-    .menu-toggle{
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-    background: none;
-    border: none;
-    gap: 4px;
-    }
+    
 }
 
 /* Desktop styles min-width: 1024px */
